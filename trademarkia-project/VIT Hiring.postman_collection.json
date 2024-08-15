@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "a9b8286e-9ac0-453f-9c99-5dc0fce0fe22",
+		"name": "VIT Hiring",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34681474"
+	},
+	"item": [
+		{
+			"name": "Basic Search",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "application/json, text/plain, */*"
+					},
+					{
+						"key": "accept-language",
+						"value": "en-GB,en-US;q=0.9,en;q=0.8"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json"
+					},
+					{
+						"key": "origin",
+						"value": "http://localhost:3001"
+					},
+					{
+						"key": "priority",
+						"value": "u=1, i"
+					},
+					{
+						"key": "referer",
+						"value": "http://localhost:3001/"
+					},
+					{
+						"key": "sec-ch-ua",
+						"value": "\"Not/A)Brand\";v=\"8\", \"Chromium\";v=\"126\", \"Google Chrome\";v=\"126\""
+					},
+					{
+						"key": "sec-ch-ua-mobile",
+						"value": "?0"
+					},
+					{
+						"key": "sec-ch-ua-platform",
+						"value": "\"macOS\""
+					},
+					{
+						"key": "sec-fetch-dest",
+						"value": "empty"
+					},
+					{
+						"key": "sec-fetch-mode",
+						"value": "cors"
+					},
+					{
+						"key": "sec-fetch-site",
+						"value": "cross-site"
+					},
+					{
+						"key": "user-agent",
+						"value": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"input_query\": \"check\",\n    \"input_query_type\":\"\",\n    \"sort_by\": \"default\",\n    \"status\": [],\n    \"exact_match\": false,\n    \"date_query\": false,\n    \"owners\": [],\n    \"attorneys\": [],\n    \"law_firms\": [],\n    \"mark_description_description\": [],\n    \"classes\": [],\n    \"page\": 1,\n    \"rows\": 10,\n    \"sort_order\": \"desc\",\n    \"states\":[],\n    \"counties\":[]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vit-tm-task.api.trademarkia.app/api/v3/us",
+					"protocol": "https",
+					"host": [
+						"vit-tm-task",
+						"api",
+						"trademarkia",
+						"app"
+					],
+					"path": [
+						"api",
+						"v3",
+						"us"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
